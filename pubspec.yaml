@@ -1,0 +1,33 @@
+name: flutter_application_t
+description: A new Flutter project featuring a Calculator, Notes, and potential API interactions.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+  flutter: ">=2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^1.2.1  # For API interactions, make sure to use the latest compatible version.
+  path_provider: ^2.0.7  # For storing data locally in the notes app.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0  # Optional: for linting purposes.
+
+# The following section is optional and can be used to specify additional
+# configuration specific to the application, such as fonts or assets.
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - images/  # If you store images locally, specify the directory here.
